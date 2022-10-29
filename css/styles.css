@@ -172,8 +172,11 @@ header {
 .advantages-list {
   display: flex;
   align-items: start;
-  flex-basis: calc((100% - 90px) / 4);
   gap: 30px;
+}
+
+.advantages-list > .item {
+  flex-basis: calc((100% - 90px)/4);
 }
 
 .advantages-title {
@@ -327,14 +330,13 @@ header {
   gap: 30px;
 }
 
-.portfolio-flex > .item {
-  border-bottom: 1px solid #eee;
-}
-
 .portfolio-wrapper {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 /* .portfolio-flex > .item:not(:nth-last-child(-n + 3)) {
