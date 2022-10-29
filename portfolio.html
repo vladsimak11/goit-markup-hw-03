@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфоліо</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -14,14 +19,12 @@
   <!-- Header -->
   <header>
     <div class="container header-flex">
-      <div class="logo">
-        <a href="./index.html"><span>Web</span>Studio</a>
-      </div>
+      <a class="logo" href="./index.html"><span>Web</span>Studio</a>
   
       <nav >
         <ul class="main-nav">
         <li class="item"><a href="./index.html" class="link">Студія</a></li>
-        <li class="item"><a href="" class="link">Портфоліо</a></li>
+        <li class="item"><a href="" class="link active">Портфоліо</a></li>
         <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
@@ -35,7 +38,7 @@
   <!-- Portfolio -->
   <section class="portfolio">
     <div class="container">
-      <h1>Портфоліо</h1>
+      <h1 class="hidden">Портфоліо</h1>
     <ul class="portfolio-button">
       <li class="item"><button type="button" class="button active">Усі</button></li>
       <li class="item"><button type="button" class="button">Веб-сайти</button></li>
@@ -47,65 +50,83 @@
       <li class="item">
         <a>
           <img src="./images/technocrat.jpg" alt="Веб-сайт Технокряк" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Технокряк</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Технокряк</h2>
           <p class="portfolio-text">Веб-сайт</p>
+          </div>
         </a>
       </li>
       <li class="item">
         <a>
           <img src="./images/new-orlean.jpg" alt="Дизайн постера" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
           <p class="portfolio-text">Дизайн</p>
+          </div>
         </a>
       </li>
       <li class="item">
         <a>
           <img src="./images/seafood.jpg" alt="Додаток для ресторану морепродуктів" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Ресторан Seafood</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Ресторан Seafood</h2>
           <p class="portfolio-text">Додаток</p>
+          </div>
         </a>  
       </li>
       <li class="item">
         <a>
           <img src="./images/prime.jpg" alt="Маркетинг для проєкту Прайм" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Проєкт Prime</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Проєкт Prime</h2>
           <p class="portfolio-text">Маркетинг</p>
+          </div>
         </a>  
       </li>
       <li class="item">
         <a>
           <img src="./images/boxes.jpg" alt="Додаток для проєкту Коробки" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Проєкт Boxes</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Проєкт Boxes</h2>
           <p class="portfolio-text">Додаток</p>
+          </div>
         </a>  
       </li>
       <li class="item">
         <a>
           <img src="./images/inspiration.jpg" alt="Сайт" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Inspiration has no Borders</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Inspiration has no Borders</h2>
           <p class="portfolio-text">Веб-сайт</p>
+          </div>
         </a>  
       </li>
       <li class="item">
         <a>
           <img src="./images/limited-editon.jpg" alt="Дизайн для видання" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Видання Limited Edition</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Видання Limited Edition</h2>
           <p class="portfolio-text">Дизайн</p>
+          </div>
         </a>
       </li>
       <li class="item">
         <a>
           <img src="./images/lab.jpg" alt="Маркетинг для проєкту ЛАБ" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Проєкт LAB</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Проєкт LAB</h2>
           <p class="portfolio-text">Маркетинг</p>
+          </div>
         </a>  
       </li>
 
       <li class="item">
         <a>
           <img src="./images/crowing-business.jpg" alt="Додаток для розвичаючого бізнесу" width="370" class="portfolio-img">
-          <h2 class="portfolio-title">Growing Business</h2>
+          <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Growing Business</h2>
           <p class="portfolio-text">Додаток</p>
+          </div>
         </a>  
       </li>
     </ul>

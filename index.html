@@ -11,7 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -19,17 +19,17 @@
   <!-- Header -->
   <header>
     <div class="container header-flex">
-      <div class="logo">
-        <a href="./index.html"><span>Web</span>Studio</a>
-      </div>
-  
+      
+      <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+      
       <nav >
         <ul class="main-nav">
-        <li class="item"><a href="" class="link">Студія</a></li>
+        <li class="item"><a href="" class="link active">Студія</a></li>
         <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
         <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
+
       <ul class="contacts">
         <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
@@ -47,7 +47,7 @@
   <!-- Advantages -->
   <section class="advantages">
     <div class="container">
-      <h2>Переваги</h2>
+      <h2 class="hidden">Переваги</h2>
     <ul class="advantages-list">
       <li class="item">
         <h3 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -86,23 +86,31 @@
     <ul class="team-list">
       <li class="item">
         <img src="./images/product-designer.jpg" alt="Ігор - продакт дизайнер" width="270" class="team-photo">
-        <h3 class="team-name">Ігор Дем'яненко</h3>
+        <div class="team-wrapper">
+          <h3 class="team-name">Ігор Дем'яненко</h3>
         <p class="team-position">Product Designer</p>
+        </div>
       </li>
       <li class="item">
         <img src="./images/frontend-developer.jpg" alt="Ольга - фронд енд розробник" width="270" class="team-photo">
-        <h3 class="team-name">Ольга Рєпіна</h3>
+        <div class="team-wrapper">
+          <h3 class="team-name">Ольга Рєпіна</h3>
         <p class="team-position">Frontend Developer</p>
+        </div>
       </li>
       <li class="item">
         <img src="./images/marketing.jpg" alt="Микола - маркетолог" width="270" class="team-photo">
-        <h3 class="team-name">Микола Тарасов</h3>
+        <div class="team-wrapper">
+          <h3 class="team-name">Микола Тарасов</h3>
         <p class="team-position">Marketing</p>
+        </div>
       </li>
       <li class="item">
         <img src="./images/ui-designer.jpg" alt="Михайло - дизайнер" width="270" class="team-photo">
-        <h3 class="team-name">Михайло Єрмаков</h3>
+        <div class="team-wrapper">
+          <h3 class="team-name">Михайло Єрмаков</h3>
         <p class="team-position">UI Designer</p>
+        </div>
       </li>
     </ul>
     </div>
